@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bkgrnd_col">#FF00AA00</color>
+    <color name="text_col_hd">#FF990099</color>
+    <color name="player_two">#FFFFFFFF</color>
+    <color name="text_general">#FF000000</color>
+    
+</resources>

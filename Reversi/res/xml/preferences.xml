@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:key="pref_key_settings">
+
+    <PreferenceCategory
+        android:title="@string/players" >
+        <ListPreference
+            android:defaultValue="@string/default_no_players"
+            android:dialogTitle="@string/players"
+            android:entries="@array/players_array"
+            android:entryValues="@array/players_array_values"
+            android:key="pref_player"
+            android:title="@string/players" />
+		<Preference
+            android:key="@string/choice_contact1"
+            android:summary="Choose a player 1 icon"
+            android:title="@string/player_one"
+            android:icon="@drawable/social_add_person"  />
+        <Preference
+            android:key="@string/choice_contact2"
+            android:summary="Choose a player 2 icon"
+            android:title="@string/player_two"
+            android:icon="@drawable/social_add_person"  /> />
+    </PreferenceCategory>
+
+    <CheckBoxPreference
+        android:key="@string/showing_poss"
+        android:summaryOn="Possible moves will be highlighted"
+        android:title="@string/show_poss"
+        android:defaultValue="true" />
+    
+    <PreferenceCategory
+        android:title="@string/time" >
+        <CheckBoxPreference
+            android:key="pref_timed"
+            android:summaryOn="Game turns will be timed"
+            android:icon="@drawable/device_access_alarms" 
+            android:title="@string/timer" 
+            android:defaultValue="false"/>
+    	<EditTextPreference
+    		android:inputType="number"
+    		android:key="pref_time_allowed"
+    		android:summary="Set the allowed turn time (minutes)"
+    		android:title="@string/time"
+    		android:icon="@drawable/device_access_time"
+    		android:defaultValue="@string/default_timing" />
+    	<CheckBoxPreference 
+    	    android:key="sound_timed"
+    	    android:summary="Turn beep on or off"
+    	    android:title="Sounds On"
+    	    android:icon="@drawable/device_access_volume_on" 
+    	    android:defaultValue="true"
+    	    />
+    	    
+   </PreferenceCategory>
+   
+ 
+   
+   <PreferenceCategory
+        android:title="@string/tiles">
+        <ListPreference
+             android:defaultValue="@string/default_tiles"
+             android:dialogTitle="@string/tiles" 
+             android:entries="@array/tiles_array" 
+             android:entryValues="@array/tiles_array_values" 
+             android:key="pref_tile" 
+             android:title="@string/tiles" />
+    </PreferenceCategory>
+ 
+</PreferenceScreen>

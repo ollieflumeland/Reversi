@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+     android:weightSum="100" >"
+    
+	<ImageView  
+	    android:id="@+id/hs_player_image_lv"
+	    android:layout_width="fill_parent"
+	    android:layout_height="30dp"
+	    android:layout_weight="40"
+	    android:layout_gravity="left"
+	    android:contentDescription="@string/image_of_player"
+	    android:scaleType="fitCenter"
+	    android:src="@drawable/ic_launcher" />
+
+	<TextView
+		android:id="@+id/hs_player_name_lv"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="20"		
+		android:textSize="20sp"
+		android:text="name" />
+  
+	<TextView
+		android:id="@+id/hs_score_lv"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="40"		
+		android:layout_gravity="right"
+		android:text="00"
+		android:textSize="20sp" />    
+
+</LinearLayout>

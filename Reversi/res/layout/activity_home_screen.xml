@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bkgrnd_col"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_top_margin" >
+
+    <TextView
+        android:id="@+id/title_textview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="@string/title"
+        android:textColor="@color/text_col_hd"
+        android:textSize="@dimen/main_title"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/title_textview"
+        android:layout_alignRight="@+id/title_textview"
+        android:layout_below="@+id/title_textview"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/text_general"
+        android:text="@string/start_game"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/timer_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/start_button"
+        android:textColor="@color/text_general"
+        android:layout_below="@+id/start_button"
+        android:layout_marginTop="10dp" >
+
+        <RadioButton
+            android:id="@+id/timed_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:textColor="@color/text_general"
+            android:text="@string/timed" />
+
+        <RadioButton
+            android:id="@+id/not_timed_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/not_timed"
+            android:textColor="@color/text_general" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/players_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/start_button"
+        android:textColor="@color/text_general"
+        android:layout_marginTop="10dp" >
+
+        <RadioButton
+            android:id="@+id/one_player_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:checked="false"
+            android:textColor="@color/text_general"
+            android:text="@string/one_player" />
+
+        <RadioButton
+            android:id="@+id/two_player_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textColor="@color/text_general"
+            android:text="@string/two_player" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/setting_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/players_radio_group"
+        android:layout_alignRight="@+id/start_button"
+        android:layout_below="@+id/timer_radio_group"
+        android:textColor="@color/text_general"
+        android:layout_marginTop="10dp"
+        android:text="@string/settings" />
+
+    <Button
+        android:id="@+id/high_scores_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/setting_button"
+        android:layout_alignRight="@+id/setting_button"
+        android:textColor="@color/text_general"
+        android:layout_below="@+id/setting_button"
+        android:text="@string/high_scores" />
+
+    <Button
+        android:id="@+id/how_to_play_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/high_scores_button"
+        android:layout_alignRight="@+id/high_scores_button"
+        android:textColor="@color/text_general"
+        android:layout_below="@+id/high_scores_button"
+        android:text="@string/rules" />
+
+    <Button
+        android:id="@+id/quit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/how_to_play_button"
+        android:layout_alignRight="@+id/how_to_play_button"
+        android:layout_below="@+id/how_to_play_button"
+        android:textColor="@color/text_general"
+        android:text="@string/quit" />
+
+</RelativeLayout>

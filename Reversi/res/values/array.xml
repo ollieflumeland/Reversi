@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="players_array">
+        <item>One Player</item>
+        <item>Two Player</item>
+    </string-array>
+    <string-array name="players_array_values">
+     	<item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="tiles_array">
+        <item>Classic Tiles</item>
+        <item>Modern Tiles</item>
+    </string-array>
+    <string-array name="tiles_array_values">
+        <item >0</item>
+        <item >1</item>
+    </string-array>
+    <string-array name="timer_array">
+        <item>Timer On</item>
+        <item>Timer Off</item>
+    </string-array>
+    <string-array name="timer_array_values">
+        <item >0</item>
+        <item >1</item>
+    </string-array>
+    
+</resources>

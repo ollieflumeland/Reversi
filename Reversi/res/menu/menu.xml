@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="60"
+        android:showAsAction="always"
+        android:title="@string/action_settings"
+        android:icon="@drawable/action_settings"
+        android:alphabeticShortcut="s" />
+    
+    <item
+        android:id="@+id/action_how_to"
+        android:orderInCategory="70"
+        android:showAsAction="ifRoom"
+        android:title="@string/rules"
+        android:icon="@drawable/action_help" 
+        android:alphabeticShortcut="h" />
+    
+    <item 
+        android:id="@+id/action_high_scores"
+        android:orderInCategory="110"
+        android:showAsAction="ifRoom"
+        android:title="@string/high_scores"
+        android:alphabeticShortcut="b" />
+    
+         
+</menu>
